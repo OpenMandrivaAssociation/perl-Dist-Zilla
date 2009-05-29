@@ -11,7 +11,33 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
 
-
+Buildrequires: perl(App::Cmd)
+Buildrequires: perl(Archive::Tar)
+Buildrequires: perl(CPAN::Uploader)
+Buildrequires: perl(Config::INI::MVP::Reader)
+Buildrequires: perl(Data::Section)
+Buildrequires: perl(DateTime)
+Buildrequires: perl(ExtUtils::Manifest) >= %perl_convert_version 1.54
+Buildrequires: perl(File::Find::Rule)
+Buildrequires: perl(File::HomeDir)
+Buildrequires: perl(File::chdir)
+Buildrequires: perl(Hash::Merge::Simple)
+Buildrequires: perl(Liste::MoreUtils)
+Buildrequires: perl(Mixin::ExtraFields::Param)
+Buildrequires: perl(Moose)
+Buildrequires: perl(Moose::Autobox)
+Buildrequires: perl(MooseX::Types::Path::Class)
+Buildrequires: perl(Path::Class)
+Buildrequires: perl(Perl::Version)
+Buildrequires: perl(Pod::Eventual)
+Buildrequires: perl(Software::License)
+Buildrequires: perl(String::Flogger)
+Buildrequires: perl(String::Format)
+Buildrequires: perl(String::RewritePrefix)
+Buildrequires: perl(Text::Template)
+Buildrequires: perl(YAML::Tiny)
+Buildrequires: perl(autobox)
+Buildrequires: perl(namespace::autoclean)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
