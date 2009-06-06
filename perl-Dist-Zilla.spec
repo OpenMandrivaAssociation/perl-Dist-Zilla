@@ -17,7 +17,7 @@ Buildrequires: perl(CPAN::Uploader)
 Buildrequires: perl(Config::INI::MVP::Reader)
 Buildrequires: perl(Data::Section)
 Buildrequires: perl(DateTime)
-Buildrequires: perl(ExtUtils::Manifest) >= %perl_convert_version 1.54
+Buildrequires: perl-ExtUtils-Manifest
 Buildrequires: perl(File::Find::Rule)
 Buildrequires: perl(File::HomeDir)
 Buildrequires: perl(File::chdir)
