@@ -9,7 +9,7 @@ Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/%{upstream_name}-%{upstream_version}.tar.gz
 
 Buildrequires: perl(App::Cmd)
 Buildrequires: perl(Archive::Tar)
