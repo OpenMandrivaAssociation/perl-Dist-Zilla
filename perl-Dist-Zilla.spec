@@ -40,6 +40,7 @@ Buildrequires: perl(autobox)
 Buildrequires: perl(namespace::autoclean)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+Requires: perl(namespace::autoclean)
 
 %description
 Dist::Zilla builds distributions of code to be uploaded to the CPAN. In
