@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla
-%define upstream_version 1.091940
+%define upstream_version 1.092070
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
