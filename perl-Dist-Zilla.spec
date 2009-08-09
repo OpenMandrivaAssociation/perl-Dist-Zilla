@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -69,6 +69,8 @@ make test
 %install
 rm -rf %buildroot
 %makeinstall_std
+install -d %{buildroot}/etc/bash_completion.d/
+install -m 644 misc/dzil-bash_completion %{buildroot}/etc/bash_completion.d/dzil
 
 %clean
 rm -rf %buildroot
@@ -79,4 +81,4 @@ rm -rf %buildroot
 %{_mandir}/man3/*
 %perl_vendorlib/*
 /usr/bin/dzil
-
+/etc/bash_completion.d/dzil
