@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -38,11 +38,14 @@ Buildrequires: perl(Text::Template)
 Buildrequires: perl(YAML::Tiny)
 Buildrequires: perl(autobox)
 Buildrequires: perl(namespace::autoclean)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
-Requires: perl(namespace::autoclean)
+
+Requires: perl(Archive::Tar)
 Requires: perl(Config::INI::MVP::Reader)
 Requires: perl(Pod::Eventual)
+Requires: perl(namespace::autoclean)
 
 %description
 Dist::Zilla builds distributions of code to be uploaded to the CPAN. In
