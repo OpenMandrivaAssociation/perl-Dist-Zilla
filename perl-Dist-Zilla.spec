@@ -33,6 +33,7 @@ Buildrequires: perl(Pod::Eventual)
 Buildrequires: perl(Software::License)
 Buildrequires: perl(String::Flogger)
 Buildrequires: perl(String::Format)
+Buildrequires: perl(String::Formatter)
 Buildrequires: perl(String::RewritePrefix)
 Buildrequires: perl(Text::Template)
 Buildrequires: perl(YAML::Tiny)
@@ -67,7 +68,7 @@ For more information, see the Dist::Zilla::Tutorial manpage.
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %buildroot
