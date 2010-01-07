@@ -49,6 +49,18 @@ Requires: perl(Config::INI::MVP::Reader)
 Requires: perl(Pod::Eventual)
 Requires: perl(namespace::autoclean)
 
+Suggests: perl(Dist::Zilla::Plugin::AutoPrereq)
+Suggests: perl(Dist::Zilla::PluginBundle::JQUELIN)
+Suggests: perl(Dist::Zilla::Plugin::CheckChangeLog)
+Suggests: perl(Dist::Zilla::Plugin::CompileTests)
+Suggests: perl(Dist::Zilla::Plugin::CriticTests)
+Suggests: perl(Dist::Zilla::Plugin::Git)
+Suggests: perl(Dist::Zilla::Plugin::MetaProvides)
+Suggests: perl(Dist::Zilla::Plugin::PodPurler)
+Suggests: perl(Dist::Zilla::Plugin::PodWeaver)
+Suggests: perl(Dist::Zilla::Plugin::Prepender)
+
+
 %description
 Dist::Zilla builds distributions of code to be uploaded to the CPAN. In
 this respect, it is like the ExtUtils::MakeMaker manpage, the Module::Build
