@@ -63,11 +63,16 @@ Suggests: perl(Dist::Zilla::Plugin::ModuleInstall)
 Suggests: perl(Dist::Zilla::Plugin::PodPurler)
 Suggests: perl(Dist::Zilla::Plugin::PodWeaver)
 Suggests: perl(Dist::Zilla::Plugin::PerlTidy)
+Suggests: perl(Dist::Zilla::Plugin::PodLoom)
 Suggests: perl(Dist::Zilla::Plugin::Prepender)
 Suggests: perl(Dist::Zilla::Plugin::ReadmeFromPod)
 Suggests: perl(Dist::Zilla::Plugin::Repository)
+Suggests: perl(Dist::Zilla::Plugin::TemplateCJM)
 Suggests: perl(Dist::Zilla::Plugin::VersionFromModule)
+Suggests: perl(Dist::Zilla::PluginBundle::CJM)
+Suggests: perl(Dist::Zilla::PluginBundle::FAYLAND)
 Suggests: perl(Dist::Zilla::PluginBundle::JQUELIN)
+Suggests: perl(Dist::Zilla::PluginBundle::RJBS)
 
 
 %description
