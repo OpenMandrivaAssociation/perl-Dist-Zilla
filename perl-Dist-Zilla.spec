@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla
-%define upstream_version 1.100160
+%define upstream_version 1.100520
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -109,7 +109,7 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes LICENSE README
+%doc Changes LICENSE README META.yml META.json
 %{_mandir}/man3/*
 %perl_vendorlib/*
 /usr/bin/dzil
