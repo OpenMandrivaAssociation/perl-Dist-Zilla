@@ -44,6 +44,7 @@ Buildrequires: perl(Version::Requirements)
 Buildrequires: perl(YAML::Tiny)
 Buildrequires: perl(autobox)
 Buildrequires: perl(namespace::autoclean)
+Buildrequires: perl(version) >= 0.790.0
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
