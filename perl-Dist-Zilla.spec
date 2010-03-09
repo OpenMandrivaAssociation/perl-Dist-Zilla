@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -53,6 +53,7 @@ Requires: perl(Archive::Tar)
 Requires: perl(Config::INI::MVP::Reader)
 Requires: perl(Pod::Eventual)
 Requires: perl(namespace::autoclean)
+Requires: perl(version) >= 1:0.790.0
 
 Suggests: perl(Dist::Zilla::Plugin::AutoPrereq)
 Suggests: perl(Dist::Zilla::Plugin::AutoVersion::Relative)
