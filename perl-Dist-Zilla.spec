@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -64,6 +64,7 @@ Suggests: perl(Dist::Zilla::Plugin::CriticTests)
 Suggests: perl(Dist::Zilla::Plugin::Git)
 Suggests: perl(Dist::Zilla::Plugin::MakeMaker::SkipInstall)
 Suggests: perl(Dist::Zilla::Plugin::MatchManifest)
+Suggests: perl(Dist::Zilla::Plugin::MetaNoIndex)
 Suggests: perl(Dist::Zilla::Plugin::MetaProvides)
 Suggests: perl(Dist::Zilla::Plugin::MetaRecommends)
 Suggests: perl(Dist::Zilla::Plugin::ModuleInstall)
@@ -74,6 +75,7 @@ Suggests: perl(Dist::Zilla::Plugin::PodLoom)
 Suggests: perl(Dist::Zilla::Plugin::Prepender)
 Suggests: perl(Dist::Zilla::Plugin::ReadmeFromPod)
 Suggests: perl(Dist::Zilla::Plugin::Repository)
+Suggests: perl(Dist::Zilla::Plugin::Signature)
 Suggests: perl(Dist::Zilla::Plugin::TemplateCJM)
 Suggests: perl(Dist::Zilla::Plugin::VersionFromModule)
 Suggests: perl(Dist::Zilla::PluginBundle::CJM)
