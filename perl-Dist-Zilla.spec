@@ -18,6 +18,7 @@ Buildrequires: perl(Config::INI::MVP::Reader)
 Buildrequires: perl(Data::Section)
 Buildrequires: perl(DateTime)
 Buildrequires: perl-ExtUtils-Manifest
+Buildrequires: perl(File::Copy::Recursive)
 Buildrequires: perl(File::Find::Rule)
 Buildrequires: perl(File::HomeDir)
 Buildrequires: perl(File::ShareDir::Install)
