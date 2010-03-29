@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -59,30 +59,50 @@ Requires: perl(version) >= 1:0.790.0
 
 Suggests: perl(Dist::Zilla::Plugin::AutoPrereq)
 Suggests: perl(Dist::Zilla::Plugin::AutoVersion::Relative)
+Suggests: perl(Dist::Zilla::Plugin::Bugtracker)
 Suggests: perl(Dist::Zilla::Plugin::CheckChangeLog)
+Suggests: perl(Dist::Zilla::Plugin::CheckExtraTests)
 Suggests: perl(Dist::Zilla::Plugin::CompileTests)
 Suggests: perl(Dist::Zilla::Plugin::CopyTo)
 Suggests: perl(Dist::Zilla::Plugin::CriticTests)
+Suggests: perl(Dist::Zilla::Plugin::DistManifestTests)
+Suggests: perl(Dist::Zilla::Plugin::FatPacker)
 Suggests: perl(Dist::Zilla::Plugin::Git)
+Suggests: perl(Dist::Zilla::Plugin::HasVersionTests)
+Suggests: perl(Dist::Zilla::Plugin::Homepage)
+Suggests: perl(Dist::Zilla::Plugin::InstallGuide)
+Suggests: perl(Dist::Zilla::Plugin::KwaliteeTests)
 Suggests: perl(Dist::Zilla::Plugin::MakeMaker::SkipInstall)
 Suggests: perl(Dist::Zilla::Plugin::MatchManifest)
 Suggests: perl(Dist::Zilla::Plugin::MetaNoIndex)
 Suggests: perl(Dist::Zilla::Plugin::MetaProvides)
 Suggests: perl(Dist::Zilla::Plugin::MetaRecommends)
+Suggests: perl(Dist::Zilla::Plugin::MinimumVersionTests)
+Suggests: perl(Dist::Zilla::Plugin::ModuleBuild::Custom)
 Suggests: perl(Dist::Zilla::Plugin::ModuleInstall)
-Suggests: perl(Dist::Zilla::Plugin::PodPurler)
-Suggests: perl(Dist::Zilla::Plugin::PodWeaver)
+Suggests: perl(Dist::Zilla::Plugin::OverridableMakeMaker)
 Suggests: perl(Dist::Zilla::Plugin::PerlTidy)
+Suggests: perl(Dist::Zilla::Plugin::PodPurler)
 Suggests: perl(Dist::Zilla::Plugin::PodLoom)
+Suggests: perl(Dist::Zilla::Plugin::PodSpellingTests)
+Suggests: perl(Dist::Zilla::Plugin::PodWeaver)
+Suggests: perl(Dist::Zilla::Plugin::PortabilityTests)
 Suggests: perl(Dist::Zilla::Plugin::Prepender)
 Suggests: perl(Dist::Zilla::Plugin::ReadmeFromPod)
+Suggests: perl(Dist::Zilla::Plugin::ReadmeMarkdownFromPod)
+Suggests: perl(Dist::Zilla::Plugin::ReportVersions)
 Suggests: perl(Dist::Zilla::Plugin::Repository)
 Suggests: perl(Dist::Zilla::Plugin::Signature)
+Suggests: perl(Dist::Zilla::Plugin::SynopsisTests)
 Suggests: perl(Dist::Zilla::Plugin::TemplateCJM)
+Suggests: perl(Dist::Zilla::Plugin::UnusedVarsTests)
 Suggests: perl(Dist::Zilla::Plugin::VersionFromModule)
+Suggests: perl(Dist::Zilla::Plugin::VersionFromPrev)
 Suggests: perl(Dist::Zilla::PluginBundle::CJM)
 Suggests: perl(Dist::Zilla::PluginBundle::FAYLAND)
 Suggests: perl(Dist::Zilla::PluginBundle::JQUELIN)
+Suggests: perl(Dist::Zilla::PluginBundle::MARCEL)
+Suggests: perl(Dist::Zilla::PluginBundle::PDONELAN)
 Suggests: perl(Dist::Zilla::PluginBundle::RJBS)
 
 
