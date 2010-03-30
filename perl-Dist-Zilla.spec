@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -51,13 +51,10 @@ Buildrequires: perl(version) >= 1:0.790.0
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
-Requires: perl(Archive::Tar)
-Requires: perl(Config::INI::MVP::Reader)
-Requires: perl(Pod::Eventual)
-Requires: perl(namespace::autoclean)
 Requires: perl(version) >= 1:0.790.0
 
-Suggests: perl(Dist::Zilla::Plugin::AutoPrereq)
+Obsoletes: perl-Dist-Zilla-Plugin-AutoPrereq
+
 Suggests: perl(Dist::Zilla::Plugin::AutoVersion::Relative)
 Suggests: perl(Dist::Zilla::Plugin::Bugtracker)
 Suggests: perl(Dist::Zilla::Plugin::CheckChangeLog)
@@ -139,7 +136,7 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes LICENSE README META.yml META.json
+%doc Changes LICENSE README META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
 /usr/bin/dzil
