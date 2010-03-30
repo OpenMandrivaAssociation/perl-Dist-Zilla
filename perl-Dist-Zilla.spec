@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -30,10 +30,12 @@ Buildrequires: perl(Log::Dispatchouli)
 Buildrequires: perl(Mixin::ExtraFields::Param)
 Buildrequires: perl(Moose)
 Buildrequires: perl(Moose::Autobox)
+Buildrequires: perl(MooseX::Role::Parameterized)
 Buildrequires: perl(MooseX::Singleton)
 Buildrequires: perl(MooseX::Types::Path::Class)
 Buildrequires: perl(PPI)
 Buildrequires: perl(Path::Class)
+Buildrequires: perl(Perl::PrereqScanner)
 Buildrequires: perl(Perl::Version)
 Buildrequires: perl(Pod::Eventual)
 Buildrequires: perl(Software::License)
