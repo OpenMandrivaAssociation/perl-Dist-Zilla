@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -60,6 +60,7 @@ Obsoletes: perl-Dist-Zilla-Plugin-AutoPrereq
 Suggests: perl(Dist::Zilla::Plugin::AutoVersion::Relative)
 Suggests: perl(Dist::Zilla::Plugin::Bugtracker)
 Suggests: perl(Dist::Zilla::Plugin::CheckChangeLog)
+Suggests: perl(Dist::Zilla::Plugin::CheckChangesTests)
 Suggests: perl(Dist::Zilla::Plugin::CheckExtraTests)
 Suggests: perl(Dist::Zilla::Plugin::CompileTests)
 Suggests: perl(Dist::Zilla::Plugin::CopyTo)
@@ -97,6 +98,7 @@ Suggests: perl(Dist::Zilla::Plugin::TemplateCJM)
 Suggests: perl(Dist::Zilla::Plugin::UnusedVarsTests)
 Suggests: perl(Dist::Zilla::Plugin::VersionFromModule)
 Suggests: perl(Dist::Zilla::Plugin::VersionFromPrev)
+Suggests: perl(Dist::Zilla::PluginBundle::AVAR)
 Suggests: perl(Dist::Zilla::PluginBundle::CJM)
 Suggests: perl(Dist::Zilla::PluginBundle::FAYLAND)
 Suggests: perl(Dist::Zilla::PluginBundle::JQUELIN)
