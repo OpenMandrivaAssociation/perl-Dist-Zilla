@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
@@ -58,6 +58,7 @@ Requires: perl(version) >= 1:0.790.0
 
 Obsoletes: perl-Dist-Zilla-Plugin-AutoPrereq
 
+Suggests: perl(Dist::Zilla::Plugin::ApacheTest)
 Suggests: perl(Dist::Zilla::Plugin::AutoVersion::Relative)
 Suggests: perl(Dist::Zilla::Plugin::Bugtracker)
 Suggests: perl(Dist::Zilla::Plugin::CheckChangeLog)
@@ -73,6 +74,8 @@ Suggests: perl(Dist::Zilla::Plugin::HasVersionTests)
 Suggests: perl(Dist::Zilla::Plugin::Homepage)
 Suggests: perl(Dist::Zilla::Plugin::InstallGuide)
 Suggests: perl(Dist::Zilla::Plugin::KwaliteeTests)
+Suggests: perl(Dist::Zilla::Plugin::LatestPrereqs)
+Suggests: perl(Dist::Zilla::Plugin::LocaleMsgfmt)
 Suggests: perl(Dist::Zilla::Plugin::MakeMaker::SkipInstall)
 Suggests: perl(Dist::Zilla::Plugin::MatchManifest)
 Suggests: perl(Dist::Zilla::Plugin::MetaNoIndex)
@@ -81,7 +84,6 @@ Suggests: perl(Dist::Zilla::Plugin::MetaRecommends)
 Suggests: perl(Dist::Zilla::Plugin::MinimumVersionTests)
 Suggests: perl(Dist::Zilla::Plugin::ModuleBuild::Custom)
 Suggests: perl(Dist::Zilla::Plugin::ModuleInstall)
-Suggests: perl(Dist::Zilla::Plugin::OverridableMakeMaker)
 Suggests: perl(Dist::Zilla::Plugin::PerlTidy)
 Suggests: perl(Dist::Zilla::Plugin::PodPurler)
 Suggests: perl(Dist::Zilla::Plugin::PodLoom)
@@ -99,7 +101,7 @@ Suggests: perl(Dist::Zilla::Plugin::TemplateCJM)
 Suggests: perl(Dist::Zilla::Plugin::UnusedVarsTests)
 Suggests: perl(Dist::Zilla::Plugin::VersionFromModule)
 Suggests: perl(Dist::Zilla::Plugin::VersionFromPrev)
-Suggests: perl(Dist::Zilla::PluginBundle::AVAR)
+#Suggests: perl(Dist::Zilla::PluginBundle::AVAR)
 Suggests: perl(Dist::Zilla::PluginBundle::CJM)
 Suggests: perl(Dist::Zilla::PluginBundle::FAYLAND)
 Suggests: perl(Dist::Zilla::PluginBundle::JQUELIN)
