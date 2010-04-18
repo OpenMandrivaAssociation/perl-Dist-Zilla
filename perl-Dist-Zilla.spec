@@ -1,9 +1,9 @@
 %define upstream_name    Dist-Zilla
-%define upstream_version 2.100960
+%define upstream_version 2.101040
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Something that provides a version number for the dist
 License:    GPL+ or Artistic
