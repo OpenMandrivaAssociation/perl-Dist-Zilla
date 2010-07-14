@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla
-%define upstream_version 2.101151
+%define upstream_version 4.101900
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -13,8 +13,11 @@ Source0:    http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/%{upstream_name}-%{
 
 Buildrequires: perl(App::Cmd)
 Buildrequires: perl(Archive::Tar)
+Buildrequires: perl(CPAN::Meta::Converter)
+Buildrequires: perl(CPAN::Meta::Prereqs)
+Buildrequires: perl(CPAN::Meta::Validator)
 Buildrequires: perl(CPAN::Uploader)
-Buildrequires: perl(Config::INI::MVP::Reader)
+Buildrequires: perl(Config::MVP::Reader::INI) >= 2.0.0
 Buildrequires: perl(Data::Section)
 Buildrequires: perl(DateTime)
 Buildrequires: perl-ExtUtils-Manifest
@@ -32,8 +35,10 @@ Buildrequires: perl(Mixin::ExtraFields::Param)
 Buildrequires: perl(Moose)
 Buildrequires: perl(Moose::Autobox)
 Buildrequires: perl(MooseX::Role::Parameterized)
+Buildrequires: perl(MooseX::SetOnce)
 Buildrequires: perl(MooseX::Singleton)
 Buildrequires: perl(MooseX::Types::Path::Class)
+Buildrequires: perl(MooseX::Types::Perl)
 Buildrequires: perl(PPI)
 Buildrequires: perl(Path::Class)
 Buildrequires: perl(Perl::PrereqScanner)
@@ -145,6 +150,7 @@ rm -rf %buildroot
 %files
 %defattr(-,root,root)
 %doc Changes LICENSE README META.yml
+%{_mandir}/man1/*
 %{_mandir}/man3/*
 %perl_vendorlib/*
 /usr/bin/dzil
