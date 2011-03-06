@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla
-%define upstream_version 4.102343
+%define upstream_version 4.200004
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -89,9 +89,6 @@ For more information, see the Dist::Zilla::Tutorial manpage.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
-
-%check
-%make test
 
 %install
 rm -rf %buildroot
