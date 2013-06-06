@@ -1,2 +1,4 @@
+removed_sources:
+  Dist-Zilla-4.200004.tar.gz: 6393daf5ff2aa0e94b9db4ddfff86b9f2e569f54
 sources:
-  "Dist-Zilla-4.200004.tar.gz": 6393daf5ff2aa0e94b9db4ddfff86b9f2e569f54
+  Dist-Zilla-4.300029.tar.gz: dba52cafb9dc9ee3fc72dd44b9c6d17da2240c70

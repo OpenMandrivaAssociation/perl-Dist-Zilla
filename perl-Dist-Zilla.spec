@@ -1,15 +1,14 @@
 %define upstream_name    Dist-Zilla
-%define upstream_version 4.200004
-
+%define upstream_version 4.300029
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%perl_convert_version 4.300029
+Release:	1
 
 Summary:	Something that provides a version number for the dist
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Dist-Zilla-4.300029.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(App::Cmd)
@@ -100,4 +99,5 @@ install -m 644 misc/dzil-bash_completion %{buildroot}/etc/bash_completion.d/dzil
 %{perl_vendorlib}/*
 %{_bindir}/dzil
 %{_sysconfdir}/bash_completion.d/dzil
+
 
