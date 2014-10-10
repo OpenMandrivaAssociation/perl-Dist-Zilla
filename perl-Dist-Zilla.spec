@@ -2,7 +2,7 @@
 %define upstream_version 4.300029
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 4.300029
-Release:	1
+Release:	2
 
 Summary:	Something that provides a version number for the dist
 License:	GPL+ or Artistic
